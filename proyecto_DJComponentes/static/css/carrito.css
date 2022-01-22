@@ -1,0 +1,80 @@
+/* body{
+  background-color: #110f0fea;
+} */
+header, .alert{
+  z-index: 100;
+}
+.description{
+  height: 25px;
+  overflow: hidden;
+  transition: height .3s ease-in .3s;
+}
+.description:hover{
+  height: 80px;
+}
+.carrito{
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+.table__productos{
+  display: flex;
+}
+.table__productos > img{
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.table__cantidad > input{
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.hide, .remove{
+  display: none;
+}
+
+#pills-tabContent h2{
+  font-family: arial, sans-serif;
+  color: #60013d;
+  font-size: 195%;
+}
+
+/* #pills-tabContent{
+    background-color: #e4e4e4;
+} */
+
+#pills-tabContent h5{
+  font-family: arial, sans-serif;
+}
+
+#pills-tabContent button {
+  font-family: arial, sans-serif;
+}
+
+#header_articulos{
+  background-color: #4c0130;
+}
+
+#footer_articulos{
+  background-color: #ffc107;
+}
+
+/* #header_articulos ul li a{
+  color: #60013d;
+} */
+
+#pills-contact-tab{
+  font-size:125%;
+}
+
+/* #pills-tab a{
+  color: white;
+  background-color: red;
+} */

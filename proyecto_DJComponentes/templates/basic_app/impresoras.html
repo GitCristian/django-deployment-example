@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+{% load static %}
+{% block body_block %}
+<title>Impresoras</title>
+<div class="container">
+  <!---BANNER-INICIO--------------------------------------------->
+  <div id="banner_impresoras" class="p-5" background-size="full-width">
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row justify-content-md-left py-2">
+          <h1><b>Impresoras</b></h1>
+          <p>Accede a nuestros productos como tintas y tóners o a nuestra selección de impresoras o multifunciones.</p>
+          <br><br>
+          <img src="..\..\static\images\impresoras_banner_1.png" class="mx-auto d-block" alt="foto_banner" id="banner_impresoras_img_type2">
+          <img src="..\..\static\images\impresoras_banner_2.png" class="mx-auto d-block" alt="foto_banner" id="banner_impresoras_img_type1">
+          <!-- <img src="..\..\static\images\impresoras_banner_3.png" class="mx-auto d-block" alt="foto_banner" id="banner_impresoras_img_type1"> -->
+          <img src="..\..\static\images\impresoras_banner_4.png" class="mx-auto d-block" alt="foto_banner" id="banner_impresoras_img_type1">
+          <!-- <img src="..\..\static\images\impresoras_banner_5.png" class="mx-auto d-block" alt="foto_banner" id="banner_impresoras_img_type1"> -->
+          <img src="..\..\static\images\impresoras_banner_6.png" class="mx-auto d-block" alt="foto_banner" id="banner_impresoras_img_type1">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---BANNER-FIN---------------------------------------------->
+
+  <!---SUBCATEGORÍAS-INICIO---------------------------------------------->
+  <div id="subcategorias_impresoras">
+    <div class="container-md p-5">
+      <div class="row">
+
+        <div class="col-sm">
+          <a href="{% url 'basic_app:impresoras_tinta' %}">
+            <div class="card w-100 card-border mb-5" id="subcategorias_impresoras_tinta">
+              <img class="card-img-top" src="..\..\static\images\subcategorias_ordenadores_sobremesa.png" alt="Card image 1">
+              <div class="card-body">
+                <h4 class="card-title"><b>Impresoras de tinta</b></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm">
+          <a href="{% url 'basic_app:impresoras_laser' %}">
+            <div class="card w-100 card-border mb-5" id="subcategorias_impresoras_laser">
+              <img class="card-img-top" src="..\..\static\images\subcategorias_ordenadores_sobremesa.png" alt="Card image 2">
+              <div class="card-body">
+                <h4 class="card-title"><b>Impresoras láser</b></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm">
+          <a href="{% url 'basic_app:impresoras_matriciales' %}">
+            <div class="card w-100 card-border mb-5" id="subcategorias_impresoras_matriciales">
+              <img class="card-img-top" src="..\..\static\images\subcategorias_ordenadores_sobremesa.png" alt="Card image 3">
+              <div class="card-body">
+                <h4 class="card-title"><b>Impresoras matriciales</b></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!---SUBCATEGORÍAS-FIN---------------------------------------------->
+</div>
+{% endblock %}

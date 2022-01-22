@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+{% load static %}
+{% block body_block %}
+<title>Periféricos</title>
+<div class="container">
+  <!---BANNER-INICIO--------------------------------------------->
+  <div id="banner_perifericos" class="p-5" background-size="full-width">
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row justify-content-md-left py-2">
+          <h1><b>Periféricos</b></h1>
+          <p>Un ordenador potente no es nada sin todos los periféricos que le rodean. Teclados, ratones y también una amplia gama de auriculares. Son tan básicos y necesarios que muchas veces pensamos que forman parte del ordenador.</p>
+          <br>
+
+          <img src="..\..\static\images\perifericos_banner2.png" class="mx-auto d-block" alt="foto_banner" id="banner_perifericos_img_type1">
+          <!-- <img src="..\..\static\images\perifericos_banner3.png" class="mx-auto d-block" alt="foto_banner"> -->
+          <img src="..\..\static\images\perifericos_banner1.png" class="mx-auto d-block" alt="foto_banner" id="banner_perifericos_img_type2">
+          <img src="..\..\static\images\perifericos_banner5.png" class="mx-auto d-block" alt="foto_banner" id="banner_perifericos_img_type2">
+          <img src="..\..\static\images\perifericos_banner4.png" class="mx-auto d-block" alt="foto_banner" id="banner_perifericos_img_type3">
+
+          <!-- <img src="..\..\static\images\perifericos_banner6.png" class="mx-auto d-block" alt="foto_banner">
+          <img src="..\..\static\images\perifericos_banner7.png" class="mx-auto d-block" alt="foto_banner">
+          <img src="..\..\static\images\perifericos_banner8.png" class="mx-auto d-block" alt="foto_banner">
+          <img src="..\..\static\images\perifericos_banner9.png" class="mx-auto d-block" alt="foto_banner"> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---BANNER-FIN---------------------------------------------->
+
+  <!---SUBCATEGORÍAS-INICIO---------------------------------------------->
+  <div id="subcategorias_perifericos">
+    <div class="container-md p-5">
+      <div class="row">
+
+        <div class="col-sm">
+          <a href="{% url 'basic_app:perifericos_teclados' %}">
+            <div class="card w-100 card-border mb-5" id="subcategorias_perifericos_teclados">
+              <img class="card-img-top" src="..\..\static\images\subcategorias_ordenadores_sobremesa.png" alt="Card image 1">
+              <div class="card-body">
+                <h4 class="card-title"><b>Teclados</b></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm">
+          <a href="{% url 'basic_app:perifericos_ratones' %}">
+            <div class="card w-100 card-border mb-5" id="subcategorias_perifericos_ratones">
+              <img class="card-img-top" src="..\..\static\images\subcategorias_ordenadores_sobremesa.png" alt="Card image 2">
+              <div class="card-body">
+                <h4 class="card-title"><b>Ratones</b></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm">
+          <a href="{% url 'basic_app:perifericos_cascos' %}">
+            <div class="card w-100 card-border mb-5" id="subcategorias_perifericos_cascos">
+              <img class="card-img-top" src="..\..\static\images\subcategorias_ordenadores_sobremesa.png" alt="Card image 3">
+              <div class="card-body">
+                <h4 class="card-title"><b>Auriculares</b></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!---SUBCATEGORÍAS-FIN---------------------------------------------->
+</div>
+{% endblock %}

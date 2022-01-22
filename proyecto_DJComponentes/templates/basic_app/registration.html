@@ -1,0 +1,21 @@
+{% extends 'basic_app/base.html' %}
+{% load static %}
+
+{% block body_block %}
+<title>Registro</title>
+<div class="jumbotron">
+  {% if registered %}
+    <h1>¡Gracias por registrarte!</h1>
+  {% else %}
+    <br><h1 id="registro_titulo"><center>¡Registrate en DJComponentes!</center></h1><br><br>
+    <h3 id="registro_subtitulo"><center>Rellena el formulario:</center></h3>
+    <form enctype="multipart/form-data" method="post" class="container pl-5 rounded-lg" id="reg_form">
+      {% csrf_token %}<br>
+      {{ user_form.as_p }}
+      {{ profile_form.as_p }}
+      <!-- <h5 style="color: black;">(Todos los campos con un <b>*</b> son obligatorios)</h5> -->
+      <br><input type="submit" value="Completar Registro">
+    </form>
+  {% endif %}
+</div>
+{% endblock %}

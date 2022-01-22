@@ -1,0 +1,225 @@
+#subcategorias_ordenadores{
+  background: rgb(255, 255, 255);
+  /* background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(99, 196, 255, 1) 57%); */
+  background-repeat: repeat-x;
+  background-size: 75%;
+  margin-top: -20px;
+}
+#subcategorias_ordenadores a{
+  text-decoration: none;
+  color: #000000;
+}
+#subcategorias_ordenadores_portatiles{
+  background-color: #EDC6FF;
+}
+#subcategorias_ordenadores_sobremesa{
+  background-color: #EDC6FF;
+}
+
+
+#subcategorias_impresoras{
+  background: rgb(255, 255, 255);
+  /* background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(99, 196, 255, 1) 57%); */
+  background-repeat: repeat-x;
+  background-size: 75%;
+  margin-top: -20px;
+}
+#subcategorias_impresoras a{
+  text-decoration: none;
+  color: #000000;
+}
+#subcategorias_impresoras_tinta{
+  background-color: #EDC6FF;
+}
+#subcategorias_impresoras_laser{
+  background-color: #EDC6FF;
+}
+#subcategorias_impresoras_matriciales{
+  background-color: #EDC6FF;
+}
+
+
+#subcategorias_consolas{
+  background: rgb(255, 255, 255);
+  /* background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(99, 196, 255, 1) 57%); */
+  background-repeat: repeat-x;
+  background-size: 75%;
+  margin-top: -20px;
+}
+#subcategorias_consolas a{
+  text-decoration: none;
+  color: #000000;
+}
+#subcategorias_consolas_xbox{
+  background-color: #EDC6FF;
+}
+#subcategorias_consolas_playstation{
+  background-color: #EDC6FF;
+}
+#subcategorias_consolas_nintendo{
+  background-color: #EDC6FF;
+}
+
+
+#subcategorias_perifericos{
+  background: rgb(255, 255, 255);
+  /* background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(99, 196, 255, 1) 57%); */
+  background-repeat: repeat-x;
+  background-size: 75%;
+  margin-top: -20px;
+}
+#subcategorias_perifericos a{
+  text-decoration: none;
+  color: #000000;
+}
+#subcategorias_perifericos_teclados{
+  background-color: #EDC6FF;
+}
+#subcategorias_perifericos_ratones{
+  background-color: #EDC6FF;
+}
+#subcategorias_perifericos_cascos{
+  background-color: #EDC6FF;
+}
+
+
+#subcategorias_videojuegos{
+  background: rgb(255, 255, 255);
+  /* background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(99, 196, 255, 1) 57%); */
+  background-repeat: repeat-x;
+  background-size: 75%;
+  margin-top: -20px;
+}
+#subcategorias_videojuegos a{
+  text-decoration: none;
+  color: #000000;
+}
+#subcategorias_videojuegos_xbox{
+  background-color: #EDC6FF;
+}
+#subcategorias_videojuegos_playstation{
+  background-color: #EDC6FF;
+}
+#subcategorias_videojuegos_ordenador{
+  background-color: #EDC6FF;
+}
+#subcategorias_videojuegos_nintendo{
+  background-color: #EDC6FF;
+}
+
+
+
+
+#banner_consolas_playstation{
+  background-color: #EDC6FF;
+  background-size: 50px 50px;
+  font-size: Open Sans, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#banner_consolas_nintendo{
+  background-color: #EDC6FF;
+  background-size: 50px 50px;
+  font-size: Open Sans, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#banner_consolas_xbox{
+  background-color: #EDC6FF;
+  background-size: 50px 50px;
+  font-size: Open Sans, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+#banner_ordenadores_portatiles{
+  background-color: #EDC6FF;
+  background-size: 50px 50px;
+  font-size: Open Sans, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#banner_ordenadores_sobremesa{
+  background-color: #EDC6FF;
+  background-size: 50px 50px;
+  font-size: Open Sans, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+#banner_perifericos_teclados{
+  background-color: #EDC6FF;
+  background-size: 50px 50px;
+  font-size: Open Sans, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#banner_perifericos_ratones{
+  background-color: #EDC6FF;
+  background-size: 50px 50px;
+  font-size: Open Sans, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#banner_perifericos_cascos{
+  background-color: #EDC6FF;
+  background-size: 50px 50px;
+  font-size: Open Sans, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+#banner_videojuegos_xbox{
+  background-color: #EDC6FF;
+  background-size: 50px 50px;
+  font-size: Open Sans, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#banner_videojuegos_playstation{
+  background-color: #EDC6FF;
+  background-size: 50px 50px;
+  font-size: Open Sans, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#banner_videojuegos_ordenador{
+  background-color: #EDC6FF;
+  background-size: 50px 50px;
+  font-size: Open Sans, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#banner_videojuegos_nintendo{
+  background-color: #EDC6FF;
+  background-size: 50px 50px;
+  font-size: Open Sans, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+#banner_impresoras_tinta{
+  background-color: #EDC6FF;
+  background-size: 50px 50px;
+  font-size: Open Sans, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#banner_impresoras_laser{
+  background-color: #EDC6FF;
+  background-size: 50px 50px;
+  font-size: Open Sans, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#banner_impresoras_matriciales{
+  background-color: #EDC6FF;
+  background-size: 50px 50px;
+  font-size: Open Sans, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}

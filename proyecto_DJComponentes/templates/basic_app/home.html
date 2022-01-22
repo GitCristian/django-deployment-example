@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+{% load static %}
+{% block body_block %}
+
+    <!---NAVBAR-INICIO---------------------------------------------->
+    <!---NAVBAR-FIN--------------------------------------------->
+<title>DJComponentes</title>
+    <!---BANNER-INICIO--------------------------------------------->
+    <article class="home-intro">
+      <div class="container">
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-sm-5">
+              <h1><b>Tu tienda de tecnología de confianza</b></h1>
+              <h4>¡Compra los últimos productos al mejor precio!</h4></div>
+            <div class="col-sm-5"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!---BANNER-FIN--------------------------------------------->
+
+    <!---CARROUSEL-INICIO---------------------------------------------->
+    <!-- <div class="carousel slide" id="mainSlider" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="{% static "images/carusel_computer1.jpg" %}" alt="First slide">
+        </div>
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="{% static "images/carusel_computer2.jpg" %}" alt="Second slide">
+        </div>
+        <div class="carousel-item active">
+          <img src="{% static "images/carusel_printer1.jpg" %}" alt="Third slide" class="d-block w-100">
+        </div>
+        <div class="carousel-item active">
+          <img src="{% static "images/carusel_printer2.jpg" %}" alt="Fourth slide" class="d-block w-100">
+        </div>
+      </div>
+    </div> -->
+    <!---CARROUSEL-FIN---------------------------------------------->
+
+    <!---RIBBON-INICIO---------------------------------------------->
+    <div id="ribbon" class="container-fluid">
+      <div id="sorteo" class="container w-50 pl-5 rounded-lg">
+        <div class="row align-items-center">
+          <div class="col-sm p-3">
+            <img src="static\images\sorteo_mario.png" class="mx-auto d-block" alt="articulo_sorteo">
+          </div>
+
+          <div class="col-sm p-3 text-light text-center">
+            <p class="text-warning h2 text-shadow"><b>Sorteo actual: ¡Figura de Mario Bros!</b></p>
+            <h4 class="h4 text-shadow">Todos los usuarios registrados participan en el sorteo. Finaliza el día <b>15 de Febrero</b></h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!---RIBBON-FIN---------------------------------------------->
+
+    <!---SEPARADOR-RIBBON-INICIO---------------------------------------------->
+    <div id="separator-ribbon">
+      <div class="content bg-warning"></div>
+    </div>
+    <!---SEPARADOR-RIBBON-FIN---------------------------------------------->
+
+    <!---DESTACADOS-INICIO---------------------------------------------->
+    <div id="destacados">
+      <div class="container-md p-5">
+        <div class="row" pt-5>
+          <h3 class="text-center text-white" pb-5 pt-5 h1>Artículos Destacados:</h3>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <div class="card w-100 card-border mb-5">
+              <img class="card-img-top" src="static\images\nintendo_switch.jpg" alt="Card image 1">
+              <div class="card-body">
+                <h4 class="card-title"><b>Nintendo Switch</b></h5>
+                <p class="card-text">Nintendo Switch + 2 juegos. Todo por <b>395€</b></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm">
+            <div class="card w-100 card-border mb-5">
+              <img class="card-img-top" src="static\images\xbox_one.jpg" alt="Card image 2">
+              <div class="card-body">
+                <h4 class="card-title"><b>XBOX One</b></h5>
+                <p class="card-text">XBOX ONE + 2 mandos. Todo por <b>399€</b></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm">
+            <div class="card w-100 card-border mb-5">
+              <img class="card-img-top" src="static\images\raton_razer_viper_mini.jpg" alt="Card image 3">
+              <div class="card-body">
+                <h4 class="card-title"><b>Razer Viper Mini</b></h5>
+                <p class="card-text">Ratón Razer Viper Mini por sólo <b>39,95€</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row py-5">
+          <div class="col">
+            <h3 class="text-center" style="color: var(--bs-blue)">Sitios Web Oficiales</h3>
+          </div>
+        </div>
+
+        <div id="destacados_links" class="row justify-content-center">
+          <div class="col-2"><a href="https://www.sony.es/">SONY</a></div>
+          <div class="col-2"><a href="https://www.nintendo.es/">NINTENDO</a></div>
+          <div class="col-2"><a href="https://www.tencent.com/en-us">Tencent</a></div>
+          <div class="col-2"><a href="https://www.blizzard.com/es-es/">Blizzard</a></div>
+          <div class="col-2"><a href="https://www.ea.com/es-es">EA</a></div>
+          <div class="col-2"><a href="https://store.ubi.com/es/home">Ubisoft</a></div>
+        </div>
+
+      </div>
+    </div>
+    <!---DESTACADOS-FIN---------------------------------------------->
+
+    <!---SEPARADOR-DESTACADOS-INICIO---------------------------------------------->
+    <div id="separator-destacados">
+      <div class="content bg-warning"></div>
+    </div>
+    <!---SEPARADOR-DESTACADOS-FIN---------------------------------------------->
+
+
+{% endblock %}

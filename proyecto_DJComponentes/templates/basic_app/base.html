@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>DJComp</title> -->
+    <!-- Fuente Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static "css/estilo_banner.css" %}">
+    <link rel="stylesheet" href="{% static "css/main.css" %}">
+    <link rel="stylesheet" href="{% static "css/estilo_faq.css" %}">
+    <link rel="stylesheet" href="{% static "css/categorias.css" %}">
+    <link rel="stylesheet" href="{% static "css/subcategorias.css" %}">
+    <link rel="stylesheet" href="{% static "css/registro_login.css" %}">
+    <link rel="stylesheet" href="{% static "css/carrito.css" %}">
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="banner_base" class="container-fluid" style="background-color: white;">
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <a href="{% url 'home' %}" class="navbar-brand">
+          <img src="{% static "images/Logo_DJComponentes.jpg" %}" alt="Logo DJComponentes" width="320" height="125"
+          class="d-inline-block align-top" />
+          <span class="hidden">DJComponentes</span>
+        </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggleMobileMenu"
+            aria-controls="toggleMobileMenu"
+            aria-expanded="false"
+            aria-lable="Toggle navigation"
+          >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+          <ul class="navbar-nav ms-auto text-center align-top">
+            <li>
+              <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </li>
+            <!-- <li>
+              <a class="nav-link" href="{% url 'basic_app:consolas' %}"><b>Consolas</b></a>
+            </li>
+            <li>
+              <a class="nav-link" href="{% url 'basic_app:ordenadores' %}"><b>Ordenadores</b></a>
+            </li>
+            <li>
+              <a class="nav-link" href="{% url 'basic_app:perifericos' %}"><b>Periféricos</b></a>
+            </li>
+            <li>
+              <a class="nav-link" href="{% url 'basic_app:videojuegos' %}"><b>Videojuegos</b></a>
+            </li>
+            <li>
+              <a class="nav-link" href="{% url 'basic_app:impresoras' %}"><b>Impresoras</b></a>
+            </li> -->
+
+            {% if user.is_authenticated %}
+            <li><a class='nav-link' href="{% url 'basic_app:carrito' %}"><b>Artículos</b></a> </li>
+            <li>
+              <a class="nav-link" href="#">Comentarios</a>
+            </li>
+            {% endif %}
+
+            {% if user.is_anonymous %}
+            <li><a class="nav-link" href="{% url 'basic_app:register' %}">Registro</a></li>
+            {% endif %}
+
+            {% if user.is_authenticated %}
+            <li><a class='nav-link' href="{% url 'logout' %}">Logout</a> </li>
+
+            {% else %}
+            <li><a class='nav-link' href="{% url 'basic_app:user_login' %}">Login</a> </li>
+            {% endif %}
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="">
+      {% block body_block %}
+
+      {% endblock %}
+    </div>
+    <!---FOOTER-INICIO--------------------------------------------->
+    <div id="footer" class="p-5">
+      <div class="container w-50 pt-5">
+        <div class="row row-cols-md-2 justify-content-md-center">
+          <div class="col text-center">
+            <a href="{% url 'basic_app:support' %}">
+              <button class="btn btn-lg rounded-pill btn-warning w-100 p-3 shadow-sm font-weight-bold"><b>Soporte al Cliente</b></button>
+            </a>
+          </div>
+        </div>
+
+        <div class="row justify-content-md-center py-2">
+          <div class="col text-center font-weight-light"> <br>
+            <p>Copyright 2022  -  DJComponentes</p>
+            <p>C/ Atarazana, 2, 44003, Teruel  -  Escuela Universitaria Politécnica de Teruel</p>
+            <p>Ingeniería Web - Front End</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---FOOTER-FIN---------------------------------------------->
+  </body>
+</html>

@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+{% load static %}
+{% block body_block %}
+<title>Carrito de la Compra</title>
+<body>
+  <!-- CATEGORÍAS -->
+  <header id="header_articulos" class="container-fluid position-sticky top-0">
+    <ul
+      class="navbar navbar-expand-sm nav nav-pills mb-3 py-1 container"
+      id="pills-tab"
+      role="tablist">
+      <li class="nav-item" role="presentation">
+        <a
+          class="nav-link active"
+
+          data-bs-toggle="pill"
+          data-bs-target="#pills-profile-1"
+          type="button"
+          role="tab"
+          aria-controls="pills-profile"
+          aria-selected="false"
+          id="pills-profile-tab"
+          ><b>Consolas</b></a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a
+          class="nav-link"
+          id="pills-profile-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-profile-2"
+          type="button"
+          role="tab"
+          aria-controls="pills-profile"
+          aria-selected="false"
+          ><b>Ordenadores</b></a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a
+          class="nav-link"
+          id="pills-profile-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-profile-3"
+          type="button"
+          role="tab"
+          aria-controls="pills-profile"
+          aria-selected="false"
+          ><b>Periféricos</b></a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a
+          class="nav-link"
+          id="pills-profile-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-profile-4"
+          type="button"
+          role="tab"
+          aria-controls="pills-profile"
+          aria-selected="false"
+          ><b>Videojuegos</b></a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a
+          class="nav-link"
+          id="pills-profile-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-profile-5"
+          type="button"
+          role="tab"
+          aria-controls="pills-profile"
+          aria-selected="false"
+          ><b>Impresoras</b></a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a
+          class="nav-link"
+          id="pills-contact-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-contact"
+          type="button"
+          role="tab"
+          aria-controls="pills-contact"
+          aria-selected="false"
+          >CARRITO</a>
+      </li>
+    </ul>
+  </header>
+
+  <!-- ALERTAS -->
+  <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    ¡Producto añadido al carrito!
+  </div>
+  <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+    ¡Producto eliminado!
+  </div>
+
+  <div class="tab-content" id="pills-tabContent">
+    <!-- -CATEGORIA-CONSOLAS-INICIO------------------------------------->
+    <div
+      class="tab-pane fade show active container"
+      id="pills-profile-1"
+      role="tabpanel"
+      aria-labelledby="pills-profile-tab">
+
+      <!---BANNER-CONSOLAS-INICIO--------------------------------------------->
+      <div id="banner_consolas" class="p-5" background-size="full-width">
+        <div class="container">
+          <div class="jumbotron">
+            <div class="row justify-content-md-left py-2">
+              <h1><b>Consolas</b></h1>
+              <p>No importa si eres de Sony y PS4 o de Microsoft y Xbox. ¡Incluso de la WII U de Nintendo! Lo importante es que te diviertas, y que lo hagas en tu videoconsola favorita al mejor precio. Y recuerda que también encontrarás aquí todo tipo de accesorios gaming para tu PC y los mejores juegos de ordenador.</p>
+              <br>
+              <img src="..\..\static\images\consolas_banner_mandops5.png" class="mx-auto d-block" alt="foto_banner_consolas" id="banner_consolas_img_type1">
+              <img src="..\..\static\images\consolas_banner_oculusrift.png" class="mx-auto d-block" alt="foto_banner_consolas" id="banner_consolas_img_type2">
+              <img src="..\..\static\images\consolas_banner_xboxone.png" class="mx-auto d-block" alt="foto_banner_consolas" id="banner_consolas_img_type1">
+              <img src="..\..\static\images\consolas_banner_switch.png" class="mx-auto d-block" alt="foto_banner_consolas" id="banner_consolas_img_type2">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---BANNER-CONSOLAS-FIN---------------------------------------------->
+      <h2 id="titulo_subcategoria" class="h4 m-4">Nintendo</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Nintendo 2DS + Mario Kart</h5>
+            <img src="../../static/images/consolas_nintendo/nintendo2ds-mariokart.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Nintendo 2DS + Juego Mario Kart 7 preinstalado.</p>
+              <h5 class="text-white">Precio: <span class="precio">285.00 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Nintendo 2DS XL Pokeball Edition</h5>
+            <img src="../../static/images/consolas_nintendo/nintendo2ds-pokemon.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Nueva Nintendo 2DS XL Edición Pokeball - edición Limitada.</p>
+              <h5 class="text-white">Precio: <span class="precio">395.00 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Nintendo Switch Lite</h5>
+            <img src="../../static/images/consolas_nintendo/nintendoswitch-amarillo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Nintendo Switch Lite en color amarillo.</p>
+              <h5 class="text-white">Precio: <span class="precio">210.00 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Nintendo Switch Azul/Roja</h5>
+            <img src="../../static/images/consolas_nintendo/nintendoswitch-azulrojo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Nintendo Switch Azul Neón/Rojo Neón V2.</p>
+              <h5 class="text-white">Precio: <span class="precio">299.98 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Nintendo Switch Blanca</h5>
+            <img src="../../static/images/consolas_nintendo/nintendoswitch-blanco.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Nintendo Switch OLED Blanca.</p>
+              <h5 class="text-white">Precio: <span class="precio">559.95 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Nintendo Switch Gris</h5>
+            <img src="../../static/images/consolas_nintendo/nintendoswitch-gris.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Nintendo Switch Gris V2.</p>
+              <h5 class="text-white">Precio: <span class="precio">289.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="h4 m-4">PlayStation</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">PlayStation 4 Slim</h5>
+            <img src="../../static/images/consolas_playstation/playstation4-slim.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">PlayStation 4 Slim (Chasis F) 500GB.</p>
+              <h5 class="text-white">Precio: <span class="precio">225.00 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">PlayStation 5 DualSense</h5>
+            <img src="../../static/images/consolas_playstation/playstation5-dualsense.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">PlayStation 5 Edición Digital + DualSense Midnight Black.</p>
+              <h5 class="text-white">Precio: <span class="precio">469.00 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">PlayStation 5</h5>
+            <img src="../../static/images/consolas_playstation/playstation5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">PlayStation 5 Edición Digital.</p>
+              <h5 class="text-white">Precio: <span class="precio">375.90 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="h4 m-4">XBOX</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">XBOX One S + 3 juegos</h5>
+            <img src="../../static/images/consolas_xbox/xbox-one-s-3juegos.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">XBOX One S All Digital 1TB + Fortnite + Sea of Thieves + Minecraft.</p>
+              <h5 class="text-white">Precio: <span class="precio">179.95 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">XBOX One S-Battlefield V</h5>
+            <img src="../../static/images/consolas_xbox/xbox-one-s-battlefield.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">XBOX One consola S 1TB + Battlefield V.</p>
+              <h5 class="text-white">Precio: <span class="precio">258.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">XBOX One S-StarWars </h5>
+            <img src="../../static/images/consolas_xbox/xbox-one-s-starwars.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">XBOX One S 1TB + StarWars Jedi: Fallen Order.</p>
+              <h5 class="text-white">Precio: <span class="precio">299.95 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">XBOX One X-Cyberpunk 2077</h5>
+            <img src="../../static/images/consolas_xbox/xbox-one-x-cyberpunk.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">XBOX One X 1TB Cyberpunk 2077 Limited Edition + Cyberpunk 2077.</p>
+              <h5 class="text-white">Precio: <span class="precio">495.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">XBOX One X-Fallout 76</h5>
+            <img src="../../static/images/consolas_xbox/xbox-one-x-fallout.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">XBOX One X Blanca + Fallout 76.</p>
+              <h5 class="text-white">Precio: <span class="precio">279.35 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">XBOX One X-StarWars</h5>
+            <img src="../../static/images/consolas_xbox/xbox-one-x-starwars.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">XBOX One X 1TB + StarWars Jedi: Fallen Order.</p>
+              <h5 class="text-white">Precio: <span class="precio">319.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">XBOX Series S</h5>
+            <img src="../../static/images/consolas_xbox/xbox-series-s.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">XBOX Series S 512GB.</p>
+              <h5 class="text-white">Precio: <span class="precio">304.95 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!---CATEGORIA-CONSOLAS-FIN------------------------------------->
+
+    <!-- -CATEGORIA-ORDENADORES-INICIO------------------------------------->
+    <div
+      class="tab-pane fade container"
+      id="pills-profile-2"
+      role="tabpanel"
+      aria-labelledby="pills-profile-tab">
+
+      <!---BANNER-ORDENADORES-INICIO--------------------------------------------->
+      <div id="banner_ordenadores" class="p-5" background-size="full-width">
+        <div class="container">
+          <div class="jumbotron">
+            <div class="row justify-content-md-left py-2">
+              <h1><b>Ordenadores</b></h1>
+              <p>DJComponentes es una de las mayores tienda de ordenadores portátiles y pc. En ningún otro lugar podrás encontrar un catálogo tan extenso de ordenadores, portátiles y convertibles a un precio inigualable, por lo que no sigas buscando, entra en la sección que desees y te facilitaremos la tarea de comprar un ordenador.</p>
+              <br>
+              <img src="..\..\static\images\ordenadores_banner1.png" class="mx-auto d-block" alt="foto_banner" id="banner_ordenadores_img_type1">
+              <img src="..\..\static\images\ordenadores_banner2.png" class="mx-auto d-block" alt="foto_banner" id="banner_ordenadores_img_type1">
+              <!-- <img src="..\..\static\images\ordenadores_banner4.png" class="mx-auto d-block" alt="foto_banner" id="banner_ordenadores_img_type1"> -->
+              <img src="..\..\static\images\ordenadores_banner5.png" class="mx-auto d-block" alt="foto_banner" id="banner_ordenadores_img_type2">
+              <img src="..\..\static\images\ordenadores_banner6.png" class="mx-auto d-block" alt="foto_banner" id="banner_ordenadores_img_type1">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---BANNER-ORDENADORES-FIN---------------------------------------------->
+      <h2 class="h4 m-4">Portátiles</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Asus ROG</h5>
+            <img src="../../static/images/ordenadores_portatiles/asus-rog.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Asus ROG G513QM AMD Ryzen 9 5900HX/16GB/1TB SSD/RTX3060/15,6".</p>
+              <h5 class="text-white">Precio: <span class="precio">1599.00 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Asus TUF</h5>
+            <img src="../../static/images/ordenadores_portatiles/asus-tuf.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Asus TUF Gaming F15 Intel Core i5-11400H/16GB/512GB SSD/RTX 3050/15,6".</p>
+              <h5 class="text-white">Precio: <span class="precio">949.00 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">HP 255</h5>
+            <img src="../../static/images/ordenadores_portatiles/hp-255.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">HP 255 G8 AMD 3020E/8GB/256GB SSD/15,6".</p>
+              <h5 class="text-white">Precio: <span class="precio">399.9 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">HP Victus</h5>
+            <img src="../../static/images/ordenadores_portatiles/hp-victus.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">HP Victus 16 AMD Ryzen 7 5800H/16GB/512GB SSD/GTX 1650/16,1".</p>
+              <h5 class="text-white">Precio: <span class="precio">999.00 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Lenovo IdeaPad</h5>
+            <img src="../../static/images/ordenadores_portatiles/lenovo_ideapad.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Lenovo IdeaPad 3 15IGL05 Intel Celeron N4020/8GB/256GB SSD/15,6".</p>
+              <h5 class="text-white">Precio: <span class="precio">387.50 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">MSI Katana</h5>
+            <img src="../../static/images/ordenadores_portatiles/msi-katana.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">MSI Katana GF66 11UC Intel Core i7-11800H/16GB/1TB SSD/RTX 3050/15,6".</p>
+              <h5 class="text-white">Precio: <span class="precio">1089.00 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="h4 m-4">PC Sobremesa</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Dell OptiPlex</h5>
+            <img src="../../static/images/ordenadores_sobremesa/dell-optiplex.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Dell OptiPlex 3080 Intel Core i3-10105/8GB/256GB SSD.</p>
+              <h5 class="text-white">Precio: <span class="precio">539.25 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Huawei Mate Station</h5>
+            <img src="../../static/images/ordenadores_sobremesa/huawei-matestation.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Huawei MateStation B515 AMD Ryzen 5 4600G/8GB/256GB SSD.</p>
+              <h5 class="text-white">Precio: <span class="precio">865.97 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Legion-Q</h5>
+            <img src="../../static/images/ordenadores_sobremesa/legion-q.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Legion-Q Tracker3 Intel Core i5-10400F/16GB/1TB+250GB SSD/GT1030.</p>
+              <h5 class="text-white">Precio: <span class="precio">648.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Lenovo IdeaCentre</h5>
+            <img src="../../static/images/ordenadores_sobremesa/lenovo-ideacentre.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Lenovo IdeaCentre 5 Intel Core i5-11400/16GB/512GB SSD.</p>
+              <h5 class="text-white">Precio: <span class="precio">549.00 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Millenium Machine</h5>
+            <img src="../../static/images/ordenadores_sobremesa/millenium-machine.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Millenium Machine AMD Ryzen 5 5600X/16GB/1TB+480GB SSD/RTX 3060Ti.</p>
+              <h5 class="text-white">Precio: <span class="precio">1599.98 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">MSI MAG</h5>
+            <img src="../../static/images/ordenadores_sobremesa/msi-mag.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">MSI MAG Codex 5 Intel Core i7-10700/16GB/1TB+512GB SSD/RTX 3070.</p>
+              <h5 class="text-white">Precio: <span class="precio">1799.00 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!---CATEGORIA-ORDENADORES-FIN------------------------------------->
+
+    <!-- -CATEGORIA-PERIFERICOS-INICIO------------------------------------->
+    <div
+      class="tab-pane fade container"
+      id="pills-profile-3"
+      role="tabpanel"
+      aria-labelledby="pills-profile-tab">
+
+      <!---BANNER-PERIFERICOS-INICIO--------------------------------------------->
+      <div id="banner_perifericos" class="p-5" background-size="full-width">
+        <div class="container">
+          <div class="jumbotron">
+            <div class="row justify-content-md-left py-2">
+              <h1><b>Periféricos</b></h1>
+              <p>Un ordenador potente no es nada sin todos los periféricos que
+                le rodean. Teclados, ratones y también una amplia gama de
+                auriculares. Son tan básicos y necesarios que muchas veces
+                pensamos que forman parte del ordenador.</p>
+              <br>
+
+              <img src="..\..\static\images\perifericos_banner2.png" class="mx-auto d-block" alt="foto_banner" id="banner_perifericos_img_type1">
+              <!-- <img src="..\..\static\images\perifericos_banner3.png" class="mx-auto d-block" alt="foto_banner"> -->
+              <img src="..\..\static\images\perifericos_banner1.png" class="mx-auto d-block" alt="foto_banner" id="banner_perifericos_img_type2">
+              <img src="..\..\static\images\perifericos_banner5.png" class="mx-auto d-block" alt="foto_banner" id="banner_perifericos_img_type2">
+              <img src="..\..\static\images\perifericos_banner4.png" class="mx-auto d-block" alt="foto_banner" id="banner_perifericos_img_type3">
+
+              <!-- <img src="..\..\static\images\perifericos_banner6.png" class="mx-auto d-block" alt="foto_banner">
+              <img src="..\..\static\images\perifericos_banner7.png" class="mx-auto d-block" alt="foto_banner">
+              <img src="..\..\static\images\perifericos_banner8.png" class="mx-auto d-block" alt="foto_banner">
+              <img src="..\..\static\images\perifericos_banner9.png" class="mx-auto d-block" alt="foto_banner"> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---BANNER-PERIFERICOS-FIN---------------------------------------------->
+      <h2 class="h4 m-4">Auriculares</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">EPOS H3</h5>
+            <img src="../../static/images/perifericos_cascos/epos-h3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">EPOS H3 White Auriculares Gaming con Acústica Cerrada.</p>
+              <h5 class="text-white">Precio: <span class="precio">76.35 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Logitech G432</h5>
+            <img src="../../static/images/perifericos_cascos/logitech-g432.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Logitech G432 Auriculares Gaming 7.1.</p>
+              <h5 class="text-white">Precio: <span class="precio">47.82 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">NewSkill Sobek</h5>
+            <img src="../../static/images/perifericos_cascos/newskill-sobek.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">NewSkill Sobek Ivory Auriculares Gaming RGB Multiplataforma Blancos.</p>
+              <h5 class="text-white">Precio: <span class="precio">40.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Owlotech Ear</h5>
+            <img src="../../static/images/perifericos_cascos/owlotech-ear.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Owlotech Ear Operator PRO Auriculares con Micrófono.</p>
+              <h5 class="text-white">Precio: <span class="precio">8.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Tempest GHS250</h5>
+            <img src="../../static/images/perifericos_cascos/tempest-ghs250.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Tempest GHS250 Rex Auriculares Gaming RGB PC.</p>
+              <h5 class="text-white">Precio: <span class="precio">39.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Xiaomi Mi True</h5>
+            <img src="../../static/images/perifericos_cascos/xiaomi-mi-true.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Xiaomi Mi True Wireless Earphones 2 Basic Auriculares Inalámbricos Blanco.</p>
+              <h5 class="text-white">Precio: <span class="precio">22.98 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 class="h4 m-4">Ratones</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Corsair Sabre</h5>
+            <img src="../../static/images/perifericos_ratones/corsair-sabre.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Corsair Sabre RGB Pro Champion Series Ratón Gaming Óptico 18000 DPI.</p>
+              <h5 class="text-white">Precio: <span class="precio">49.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">HP 1000</h5>
+            <img src="../../static/images/perifericos_ratones/hp-1000.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">HP 1000 Ratón USB Negro.</p>
+              <h5 class="text-white">Precio: <span class="precio">5.31 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Logitech G502</h5>
+            <img src="../../static/images/perifericos_ratones/logitech-g502.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Logitech G502 Lightspeed Ratón Gaming Inalámbrico 25600DPI.</p>
+              <h5 class="text-white">Precio: <span class="precio">98.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Logitech M185</h5>
+            <img src="../../static/images/perifericos_ratones/logitech-m185.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Logitech M185 Ratón Inalámbrico 1000DPI Gris.</p>
+              <h5 class="text-white">Precio: <span class="precio">9.91 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">MSI Clutch</h5>
+            <img src="../../static/images/perifericos_ratones/msi-clutch.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">MSI Clutch GM08 Ratón Gaming 4200DPI.</p>
+              <h5 class="text-white">Precio: <span class="precio">11.58 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Razer Basilisk</h5>
+            <img src="../../static/images/perifericos_ratones/razer-basilisk.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Razer Basilisk X Hyperspeed Ratón Gaming 16000DPI Negro.</p>
+              <h5 class="text-white">Precio: <span class="precio">39.98 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 class="h4 m-4">Teclados</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Logitech G513</h5>
+            <img src="../../static/images/perifericos_teclados/logitech-g513.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Logitech G513 Carbon Teclado Mecánico Gaming RGB GX Brown.</p>
+              <h5 class="text-white">Precio: <span class="precio">123.86 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">MSI Vigor</h5>
+            <img src="../../static/images/perifericos_teclados/msi-vigor.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">MSI Vigor GK50 Teclado Mecánico Gaming RGB Switches Kailh.</p>
+              <h5 class="text-white">Precio: <span class="precio">72.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">NewSkill Suiko</h5>
+            <img src="../../static/images/perifericos_teclados/newskill-suiko.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">NewSkill Suiko Teclado Mecánico Gaming RGB Switch Kailh.</p>
+              <h5 class="text-white">Precio: <span class="precio">69.95 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Owlotech Office</h5>
+            <img src="../../static/images/perifericos_teclados/owlotech-office.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Owlotech Office K300 Teclado USB Negro.</p>
+              <h5 class="text-white">Precio: <span class="precio">6.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Razer Huntsman Mini</h5>
+            <img src="../../static/images/perifericos_teclados/razer-huntsman-mini.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Razer Huntsman Mini Purple Switch.</p>
+              <h5 class="text-white">Precio: <span class="precio">89.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Tempest K9</h5>
+            <img src="../../static/images/perifericos_teclados/tempest-k9.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Tempest K9 RGB Backlit Teclado Gaming RGB.</p>
+              <h5 class="text-white">Precio: <span class="precio">19.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!---CATEGORIA-PERIFERICOS-FIN------------------------------------->
+
+    <!-- -CATEGORIA-VIDEOJUEGOS-INICIO------------------------------------->
+    <div
+      class="tab-pane fade container"
+      id="pills-profile-4"
+      role="tabpanel"
+      aria-labelledby="pills-profile-tab">
+
+      <!---BANNER-VIDEOJUEGOS-INICIO--------------------------------------------->
+      <div id="banner_videojuegos" class="p-5" background-size="full-width">
+        <div class="container">
+          <div class="jumbotron">
+            <div class="row justify-content-md-left py-2">
+              <h1><b>Videojuegos</b></h1>
+              <p>Las últimas novedades y juegos clásicos a un precio increíble.
+                En físico, y ahora también en digital (códigos de descarga).
+                Disfruta de una gran variedad de títulos y ediciones
+                coleccionista de los últimos lanzamientos y mejores juegos.
+                Si eres de los que les gusta quedar con amigos para jugar,
+                aquí tienes un montón de mandos y otros accesorios. ¡Para
+                vosotros, jugadores!</p>
+              <br><br><br><br><br>
+              <img src="..\..\static\images\videojuegos_banner1.png" class="mx-auto d-block" alt="foto_banner" id="banner_videojuegos_img_type4">
+              <img src="..\..\static\images\videojuegos_banner3.png" class="mx-auto d-block" alt="foto_banner" id="banner_videojuegos_img_type1">
+              <img src="..\..\static\images\videojuegos_banner4.png" class="mx-auto d-block" alt="foto_banner" id="banner_videojuegos_img_type2">
+              <img src="..\..\static\images\videojuegos_banner2.png" class="mx-auto d-block" alt="foto_banner" id="banner_videojuegos_img_type3">
+              <!-- <img src="..\..\static\images\videojuegos_banner5.png" class="mx-auto d-block" alt="foto_banner"> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---BANNER-VIDEOJUEGOS-FIN---------------------------------------------->
+      <h2 class="h4 m-4">Para Nintendo</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Animal Crossing-Switch</h5>
+            <img src="../../static/images/videojuegos_nintendo/animalcrossing-switch.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Animal Crossing: New Horizons Nintendo Switch.</p>
+              <h5 class="text-white">Precio: <span class="precio">48.35 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Just Dance 2022-Switch</h5>
+            <img src="../../static/images/videojuegos_nintendo/justdance2022-switch.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Just Dance 2022 Nintendo Switch.</p>
+              <h5 class="text-white">Precio: <span class="precio">33.23 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Pokemon Diamante-Switch</h5>
+            <img src="../../static/images/videojuegos_nintendo/pokemon-diamante-switch.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Pokemon Diamante Brillante Nintendo Switch.</p>
+              <h5 class="text-white">Precio: <span class="precio">46.04 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Pokemon Perla-Switch</h5>
+            <img src="../../static/images/videojuegos_nintendo/pokemon-perla-switch.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Pokemon Perla Reluciente Nintendo Switch.</p>
+              <h5 class="text-white">Precio: <span class="precio">46.04 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Super Mario Bros 2-3DS</h5>
+            <img src="../../static/images/videojuegos_nintendo/supermariobros2-3ds.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">New Super Mario Bros 2 3DS.</p>
+              <h5 class="text-white">Precio: <span class="precio">49.98 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Super Smash Bros-3DS</h5>
+            <img src="../../static/images/videojuegos_nintendo/supersmashbros-3ds.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Super Smash Bros N3DS.</p>
+              <h5 class="text-white">Precio: <span class="precio">36.30 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 class="h4 m-4">Para PC</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Diablo III</h5>
+            <img src="../../static/images/videojuegos_pc/diablo3-pc.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Diablo III Reaper Of Souls PC.</p>
+              <h5 class="text-white">Precio: <span class="precio">15.73 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Empire of Sin</h5>
+            <img src="../../static/images/videojuegos_pc/empireofsin-pc.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Empire of Sin Day One PC.</p>
+              <h5 class="text-white">Precio: <span class="precio">32.67 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Fifa 22</h5>
+            <img src="../../static/images/videojuegos_pc/fifa22-pc.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Fifa 22 para PC.</p>
+              <h5 class="text-white">Precio: <span class="precio">54.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Football Manager 2022</h5>
+            <img src="../../static/images/videojuegos_pc/footballmanager2022-pc.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Football Manager 2022 PC.</p>
+              <h5 class="text-white">Precio: <span class="precio">43.06 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Forza Horizon 5 (licencia digital)</h5>
+            <img src="../../static/images/videojuegos_pc/forzahorizon5-licenciadigital.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Forza Horizon 5 Edición Estándar Licencia Digital.</p>
+              <h5 class="text-white">Precio: <span class="precio">69.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Forza Horizon 5 Premium (licencia digital)</h5>
+            <img src="../../static/images/videojuegos_pc/forzahorizon5-premium-licenciadigital.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Forza Horizon 5 Edición Premium Licencia Digital.</p>
+              <h5 class="text-white">Precio: <span class="precio">99.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 class="h4 m-4">Para PlayStation</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Dirt 5-PS4</h5>
+            <img src="../../static/images/videojuegos_playstation/dirt5-ps4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Dirt 5 para PS4.</p>
+              <h5 class="text-white">Precio: <span class="precio">24.01 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Far Cry 6-PS5</h5>
+            <img src="../../static/images/videojuegos_playstation/farcry6-ps5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Far Cry 6 para PS5.</p>
+              <h5 class="text-white">Precio: <span class="precio">35.02 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Fifa 22-PS4</h5>
+            <img src="../../static/images/videojuegos_playstation/fifa22-ps4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Fifa 22 para PS4.</p>
+              <h5 class="text-white">Precio: <span class="precio">56.91 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Fifa 22-PS5</h5>
+            <img src="../../static/images/videojuegos_playstation/fifa22-ps5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Fifa 22 para PS5.</p>
+              <h5 class="text-white">Precio: <span class="precio">64.80 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">NBA 2k22-PS4</h5>
+            <img src="../../static/images/videojuegos_playstation/nba2k22-ps4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">NBA 2k22 para PS4.</p>
+              <h5 class="text-white">Precio: <span class="precio">27.03 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Spiderman-PS5</h5>
+            <img src="../../static/images/videojuegos_playstation/spiderman-ps5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Marvel's Spiderman Miles Morales para PS5.</p>
+              <h5 class="text-white">Precio: <span class="precio">48.00 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 class="h4 m-4">Para XBOX</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Blacksad</h5>
+            <img src="../../static/images/videojuegos_xbox/blacksad.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Blacksad: Under the Skin para XBOX One.</p>
+              <h5 class="text-white">Precio: <span class="precio">35.09 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Minecraft Dungeons Hero</h5>
+            <img src="../../static/images/videojuegos_xbox/minecraft-dungeonshero.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Minecraft Dungeons Hero Edition XBOX One.</p>
+              <h5 class="text-white">Precio: <span class="precio">7.99 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Red Dead Redemption 2</h5>
+            <img src="../../static/images/videojuegos_xbox/reddeadredemption2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Red Dead Redemption 2 para XBOX One.</p>
+              <h5 class="text-white">Precio: <span class="precio">24.24 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Watch Dogs Legion</h5>
+            <img src="../../static/images/videojuegos_xbox/watchdogs-legion.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Watch Dogs: Legion XBOX One.</p>
+              <h5 class="text-white">Precio: <span class="precio">20.64 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Werewolf The Apocalypse</h5>
+            <img src="../../static/images/videojuegos_xbox/werewolf-theapocalypse.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Werewolf: The Apocalypse - Earthblood XBOX One/Series.</p>
+              <h5 class="text-white">Precio: <span class="precio">28.39 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!---CATEGORIA-VIDEOJUEGOS-FIN------------------------------------->
+
+    <!-- -CATEGORIA-IMPRESORAS-INICIO------------------------------------->
+    <div
+      class="tab-pane fade container"
+      id="pills-profile-5"
+      role="tabpanel"
+      aria-labelledby="pills-profile-tab">
+
+      <!---BANNER-IMPRESORAS-INICIO--------------------------------------------->
+      <div id="banner_impresoras" class="p-5" background-size="full-width">
+        <div class="container">
+          <div class="jumbotron">
+            <div class="row justify-content-md-left py-2">
+              <h1><b>Impresoras</b></h1>
+              <p>Accede a nuestros productos como tintas y tóners o a nuestra
+                selección de impresoras o multifunciones.</p>
+              <br><br>
+              <img src="..\..\static\images\impresoras_banner_1.png" class="mx-auto d-block" alt="foto_banner" id="banner_impresoras_img_type2">
+              <img src="..\..\static\images\impresoras_banner_2.png" class="mx-auto d-block" alt="foto_banner" id="banner_impresoras_img_type1">
+              <!-- <img src="..\..\static\images\impresoras_banner_3.png" class="mx-auto d-block" alt="foto_banner" id="banner_impresoras_img_type1"> -->
+              <img src="..\..\static\images\impresoras_banner_4.png" class="mx-auto d-block" alt="foto_banner" id="banner_impresoras_img_type1">
+              <!-- <img src="..\..\static\images\impresoras_banner_5.png" class="mx-auto d-block" alt="foto_banner" id="banner_impresoras_img_type1"> -->
+              <img src="..\..\static\images\impresoras_banner_6.png" class="mx-auto d-block" alt="foto_banner" id="banner_impresoras_img_type1">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---BANNER-IMPRESORAS-FIN---------------------------------------------->
+      <h2 class="h4 m-4">De inyección de tinta</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Canon Pixma</h5>
+            <img src="../../static/images/impresoras_tinta/canon-pixma.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Canon Pixma G1520 Impresora Tinta Color.</p>
+              <h5 class="text-white">Precio: <span class="precio">212.63 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">EPSON Ecotank</h5>
+            <img src="../../static/images/impresoras_tinta/epson-ecotank.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Epson EcoTank ET-1810 Impresora Color WiFi.</p>
+              <h5 class="text-white">Precio: <span class="precio">188.11 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">HP Envy</h5>
+            <img src="../../static/images/impresoras_tinta/hp-envy.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">HP Envy 6020e Multifunción Color WiFi Dúplex Fax.</p>
+              <h5 class="text-white">Precio: <span class="precio">87.73 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">HP Officejet</h5>
+            <img src="../../static/images/impresoras_tinta/hp-officejet.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">HP Officejet 6230 Impresora ePrint WiFi.</p>
+              <h5 class="text-white">Precio: <span class="precio">81.02 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">HP Officejet Pro</h5>
+            <img src="../../static/images/impresoras_tinta/hp-officejetpro.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">HP Officejet Pro 8210 Impresora Color Wifi Dúplex.</p>
+              <h5 class="text-white">Precio: <span class="precio">133.05 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 class="h4 m-4">Láser</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Brother DCP</h5>
+            <img src="../../static/images/impresoras_laser/brother-dcp.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Brother DCP-L6600DW Multifunción Láser Monocromo WiFi.</p>
+              <h5 class="text-white">Precio: <span class="precio">680.85 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Brother HL</h5>
+            <img src="../../static/images/impresoras_laser/brother-hl.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Brother HL-L2350DW Impresora Láser Monocromo WiFi.</p>
+              <h5 class="text-white">Precio: <span class="precio">136.23 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Canon iSensys</h5>
+            <img src="../../static/images/impresoras_laser/canon-isensys.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Canon iSensys LBP6030B Impresora Láser Monocromo.</p>
+              <h5 class="text-white">Precio: <span class="precio">141.66 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">HP Laserjet Color</h5>
+            <img src="../../static/images/impresoras_laser/hp-laserjet-color.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">HP Laserjet Color Pro M454dw Impresora Láser Color WiFi.</p>
+              <h5 class="text-white">Precio: <span class="precio">436.93 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">HP Laserjet</h5>
+            <img src="../../static/images/impresoras_laser/hp-laserjet.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">HP Laserjet M209dwe Impresora Láser WiFi Monocromo.</p>
+              <h5 class="text-white">Precio: <span class="precio">152.76 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">Kyocera Ecosys</h5>
+            <img src="../../static/images/impresoras_laser/kyocera-ecosys.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Kyocera Ecosys FS-1041 Impresora Láser Monocromo.</p>
+              <h5 class="text-white">Precio: <span class="precio">92.00 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 class="h4 m-4">Matriciales</h2>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">EPSON FX</h5>
+            <img src="../../static/images/impresoras_matriciales/epson-fx.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">EPSON FX-890II Impresora Matricial Monocromo.</p>
+              <h5 class="text-white">Precio: <span class="precio">667.29 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">EPSON LQ</h5>
+            <img src="../../static/images/impresoras_matriciales/epson-lq.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">EPSON LQ-2090IIN Impresora Matricial Monocromo.</p>
+              <h5 class="text-white">Precio: <span class="precio">1578.04 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-white">EPSON LX</h5>
+            <img src="../../static/images/impresoras_matriciales/epson-lx.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">EPSON LX-350 Impresora Matricial Monocromo.</p>
+              <h5 class="text-white">Precio: <span class="precio">297.32 €</span></h5>
+              <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!---CATEGORIA-IMPRESORAS-FIN------------------------------------->
+
+
+
+      <div
+        class="tab-pane fade carrito"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+      >
+      <br>
+      <table class="table table-hover">
+        <thead>
+          <tr class="text-primary">
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+
+
+
+        </tbody>
+      </table>
+      <br><br>
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal">Total: 0</h3>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <button class="btn btn-success">COMPRAR</button>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <footer id="footer_articulos" class="p-3 mt-5">
+      <p class="text-center m-0">Puedes revisar tus artículos
+        yendo a la sección "CARRITO"</p>
+    </footer>
+
+
+    <script src="../../static/js/scripts.js"></script>
+</body>
+{% endblock %}

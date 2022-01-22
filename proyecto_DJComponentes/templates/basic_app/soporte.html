@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+{% load static %}
+{% block body_block %}
+<title>Soporte al cliente</title>
+<article class="faq-intro">
+  <div class="container">
+    <div class="jumbotron">
+      <div class="row" style="color: white">
+        <div id="txt_banner_faq" class="col-sm-8">
+          <h4 id="txt_banner_faq_title"><b>Información sobre el reembolso de tu devolución</b></h4>
+          <span>
+            <br>
+            Actualmente nuestros almacenes tienen un alto volumen de trabajo y necesitan un poco más de tiempo para registrar las devoluciones que reciben. Sentimos mucho las molestias por esta situación. Estamos trabajando para que tu devolución se registre cuanto antes. Una vez registrada, recibirás el correo electrónico de confirmación y el reembolso en un plazo máximo de 7 días.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<div id="faq_contacto" class="container">
+  <h2><b>CONTACTA CON NOSOTROS:</b></h2>
+  <h4 id="faq_contacto_txt1">Si lo que quiere es llamarnos, nuestros agentes estarán encantados de atenderle. Llamadas gratuitas. Las horas de atención al cliente son de Lunes a Viernes entre las <b>09:00 - 19:00</b>. Número de at. al cliente:</h4>
+  <h2 id="faq_contacto_txt2"><b>+34 123 456 789</b></h2> <br>
+  <h4 id="faq_contacto_txt1">También puede enviarnos su pregunta por correo electrónico rellenando el siguiente formulario:</h4>
+  <form class="container pl-5 rounded-lg" action="mailto:99cristianb@gmail.com" method="post" enctype="text/plain" id="faq_contacto_form"> <br>
+    <h4><b>Nombre:</b><br></h4>
+    <input type="text" name="nombre" required><br>
+    <h4><b>E-mail:</b><br></h4>
+    <input type="email" name="email" required><br>
+    <h4><b>Comentario:</b><br></h4>
+    <input type="text" name="comentario" size="94" class="col-sm p-5" required><br><br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpiar">
+  </form>
+</div>
+
+
+{% endblock %}

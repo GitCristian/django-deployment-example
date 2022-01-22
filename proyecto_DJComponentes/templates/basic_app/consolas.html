@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+{% load static %}
+{% block body_block %}
+<title>Consolas</title>
+<div class="container">
+
+  <!---BANNER-INICIO--------------------------------------------->
+  <div id="banner_consolas" class="p-5" background-size="full-width">
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row justify-content-md-left py-2">
+          <h1><b>Consolas</b></h1>
+          <p>No importa si eres de Sony y PS4 o de Microsoft y Xbox. ¡Incluso de la WII U de Nintendo! Lo importante es que te diviertas, y que lo hagas en tu videoconsola favorita al mejor precio. Y recuerda que también encontrarás aquí todo tipo de accesorios gaming para tu PC y los mejores juegos de ordenador.</p>
+          <br>
+          <img src="..\..\static\images\consolas_banner_mandops5.png" class="mx-auto d-block" alt="foto_banner_consolas" id="banner_consolas_img_type1">
+          <img src="..\..\static\images\consolas_banner_oculusrift.png" class="mx-auto d-block" alt="foto_banner_consolas" id="banner_consolas_img_type2">
+          <img src="..\..\static\images\consolas_banner_xboxone.png" class="mx-auto d-block" alt="foto_banner_consolas" id="banner_consolas_img_type1">
+          <img src="..\..\static\images\consolas_banner_switch.png" class="mx-auto d-block" alt="foto_banner_consolas" id="banner_consolas_img_type2">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---BANNER-FIN---------------------------------------------->
+
+  <!---SUBCATEGORÍAS-INICIO---------------------------------------------->
+  <div id="subcategorias_consolas">
+    <div class="container-md p-5">
+      <div class="row">
+
+        <div class="col-sm">
+          <a href="{% url 'basic_app:consolas_xbox' %}">
+            <div class="card w-100 card-border mb-5" id="subcategorias_consolas_xbox">
+              <img class="card-img-top" src="..\..\static\images\subcategorias_ordenadores_sobremesa.png" alt="Card image 1">
+              <div class="card-body">
+                <h4 class="card-title"><b>XBOX</b></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm">
+          <a href="{% url 'basic_app:consolas_playstation' %}">
+            <div class="card w-100 card-border mb-5" id="subcategorias_consolas_playstation">
+              <img class="card-img-top" src="..\..\static\images\subcategorias_ordenadores_sobremesa.png" alt="Card image 2">
+              <div class="card-body">
+                <h4 class="card-title"><b>PlayStation</b></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm">
+          <a href="{% url 'basic_app:consolas_nintendo' %}">
+            <div class="card w-100 card-border mb-5" id="subcategorias_consolas_nintendo">
+              <img class="card-img-top" src="..\..\static\images\subcategorias_ordenadores_sobremesa.png" alt="Card image 3">
+              <div class="card-body">
+                <h4 class="card-title"><b>Nintendo</b></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!---SUBCATEGORÍAS-FIN---------------------------------------------->
+</div>
+{% endblock %}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+{% load static %}
+{% block body_block %}
+<title>Ordenadores</title>
+<div class="container">
+  <!---BANNER-INICIO--------------------------------------------->
+  <div id="banner_ordenadores" class="p-5" background-size="full-width">
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row justify-content-md-left py-2">
+          <h1><b>Ordenadores</b></h1>
+          <p>DJComponentes es una de las mayores tienda de ordenadores portátiles y pc. En ningún otro lugar podrás encontrar un catálogo tan extenso de ordenadores, portátiles y convertibles a un precio inigualable, por lo que no sigas buscando, entra en la sección que desees y te facilitaremos la tarea de comprar un ordenador.</p>
+          <br>
+          <img src="..\..\static\images\ordenadores_banner1.png" class="mx-auto d-block" alt="foto_banner" id="banner_ordenadores_img_type1">
+          <img src="..\..\static\images\ordenadores_banner2.png" class="mx-auto d-block" alt="foto_banner" id="banner_ordenadores_img_type1">
+          <!-- <img src="..\..\static\images\ordenadores_banner4.png" class="mx-auto d-block" alt="foto_banner" id="banner_ordenadores_img_type1"> -->
+          <img src="..\..\static\images\ordenadores_banner5.png" class="mx-auto d-block" alt="foto_banner" id="banner_ordenadores_img_type2">
+          <img src="..\..\static\images\ordenadores_banner6.png" class="mx-auto d-block" alt="foto_banner" id="banner_ordenadores_img_type1">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---BANNER-FIN---------------------------------------------->
+
+  <!---SUBCATEGORÍAS-INICIO---------------------------------------------->
+  <div id="subcategorias_ordenadores">
+    <div class="container-md p-5">
+      <div class="row">
+
+        <div class="col-sm">
+          <a href="{% url 'basic_app:ordenadores_sobremesa' %}">
+            <div class="card w-100 card-border mb-5" id="subcategorias_ordenadores_sobremesa">
+              <img class="card-img-top" src="..\..\static\images\subcategorias_ordenadores_sobremesa.png" alt="Card image 1">
+              <div class="card-body">
+                <h4 class="card-title"><b>PC Sobremesa</b></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm">
+          <a href="{% url 'basic_app:ordenadores_portatiles' %}">
+            <div class="card w-100 card-border mb-5" id="subcategorias_ordenadores_portatiles">
+              <img class="card-img-top" src="..\..\static\images\subcategorias_ordenadores_portatil.jpg" alt="Card image 2">
+              <div class="card-body">
+                <h4 class="card-title"><b>Portátiles</b></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!---SUBCATEGORÍAS-FIN---------------------------------------------->
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+#txt_banner_faq{
+  background-color: #7E009E;
+  height: 200px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#txt_banner_faq_title{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.faq-intro .jumbotron {
+  padding: 25px 200px;
+  margin: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#faq_contacto{
+  margin-top: 80px;
+  padding: 0px 60px;
+}
+
+#faq_contacto_form h4{
+  font-family: verdana;
+}
+
+#faq_contacto_txt1{
+  padding: 0px 10px;
+}
+
+#faq_contacto_txt2{
+  text-align: center;
+  color: rgb(153,0,176);
+}
+
+#faq_contacto_form{
+  background-color: #E1E1E1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  color: #9900B0;
+  padding: 0px 100px 25px;
+  margin-bottom: 50px;
+}

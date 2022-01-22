@@ -1,0 +1,139 @@
+h2, h3, h4, h5, button {
+  font-family: 'Bitter,';
+}
+
+#banner_base{
+  background-color: white;
+}
+
+#ribbon{
+  background-color: rgb(219, 26, 26);
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(131, 21, 21, 0.5) 25px, rgba(131, 21, 21, 0.5) 40px);
+  )
+}
+
+#ribbon::before{
+  margin-top: 50px;
+  content: '';
+  background-color: transparent;
+  display: block;
+  height: 40px;
+  width: 20%;
+  margin: 10 auto;
+  position: relative;
+  left: auto;
+}
+
+#ribbon::after{
+  content: '';
+  background-color: transparent;
+  display: block;
+  height: 5px;
+  width: 50%;
+  margin: 10 auto;
+  position: relative;
+  left: auto;
+  margin-top: 10px;
+}
+
+/* #ribbon::before{
+  content: '';
+  background-color: transparent;
+  display: block;
+  height: 30px;
+  width: 50%;
+  margin: 10 auto;
+  position: relative;
+  left: auto;
+  margin-top: -40px;
+} */
+
+#sorteo{
+  background-color: rgb(219, 26, 26);
+  position: relative;
+  margin-top: -20px;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#sorteo img{
+  position:relative;
+  margin-top: -110px;
+  height: 325px;
+  width: 200px;
+}
+
+.text-shadow{
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+#separator-ribbon{
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+#separator-ribbon .content{
+  width: 150%;
+  height: 50px;
+  margin-left: -25%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+#separator-ribbon .bg-warning{
+  color: #6F008F;
+}
+
+.card-border{
+  border: solid 10px white;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all ease-out 0 2s;
+}
+
+.card-border:hover{
+  transform: scale(1.05);
+}
+
+#destacados{
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(99, 196, 255, 1) 57%);
+  background-repeat: repeat-x;
+  background-size: 75%;
+  margin-top: -20px;
+}
+
+#separator-destacados{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+#separator-destacados .content{
+  background-color: yellow;
+  width: 110%;
+  height: 50px;
+  margin-left: -5%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+#destacados_links{
+  font-size: 125%;
+  text-decoration: none;
+}
+
+#footer{
+  background-color: #F7AA18;
+  background: url("../images/footer-dots.png") #F7AA18;
+  background-size: 50px 50px;
+  /* height: 400px; */
+}
+
+#footer p{
+  font-size: medium;
+}

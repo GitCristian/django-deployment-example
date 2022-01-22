@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+{% load static %}
+{% block body_block %}
+<title>Videojuegos</title>
+<div class="container">
+  <!---BANNER-INICIO--------------------------------------------->
+  <div id="banner_videojuegos" class="p-5" background-size="full-width">
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row justify-content-md-left py-2">
+          <h1><b>Videojuegos</b></h1>
+          <p>Las últimas novedades y juegos clásicos a un precio increíble. En físico, y ahora también en digital (códigos de descarga). Disfruta de una gran variedad de títulos y ediciones coleccionista de los últimos lanzamientos y mejores juegos. Si eres de los que les gusta quedar con amigos para jugar, aquí tienes un montón de mandos y otros accesorios. ¡Para vosotros, jugadores!</p>
+          <br><br><br><br><br>
+          <img src="..\..\static\images\videojuegos_banner1.png" class="mx-auto d-block" alt="foto_banner" id="banner_videojuegos_img_type4">
+          <img src="..\..\static\images\videojuegos_banner3.png" class="mx-auto d-block" alt="foto_banner" id="banner_videojuegos_img_type1">
+          <img src="..\..\static\images\videojuegos_banner4.png" class="mx-auto d-block" alt="foto_banner" id="banner_videojuegos_img_type2">
+          <img src="..\..\static\images\videojuegos_banner2.png" class="mx-auto d-block" alt="foto_banner" id="banner_videojuegos_img_type3">
+          <!-- <img src="..\..\static\images\videojuegos_banner5.png" class="mx-auto d-block" alt="foto_banner"> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---BANNER-FIN---------------------------------------------->
+  <!---SUBCATEGORÍAS-INICIO---------------------------------------------->
+  <div id="subcategorias_videojuegos">
+    <div class="container-md p-5">
+      <div class="row">
+
+        <div class="col-sm">
+          <a href="{% url 'basic_app:videojuegos_xbox' %}">
+            <div class="card w-100 card-border mb-5" id="subcategorias_videojuegos_xbox">
+              <img class="card-img-top" src="..\..\static\images\subcategorias_ordenadores_sobremesa.png" alt="Card image 1">
+              <div class="card-body">
+                <h4 class="card-title"><b>Para XBOX</b></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm">
+          <a href="{% url 'basic_app:videojuegos_playstation' %}">
+            <div class="card w-100 card-border mb-5" id="subcategorias_videojuegos_playstation">
+              <img class="card-img-top" src="..\..\static\images\subcategorias_ordenadores_sobremesa.png" alt="Card image 2">
+              <div class="card-body">
+                <h4 class="card-title"><b>Para PlayStation</b></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm">
+          <a href="{% url 'basic_app:videojuegos_ordenador' %}">
+            <div class="card w-100 card-border mb-5" id="subcategorias_videojuegos_ordenador">
+              <img class="card-img-top" src="..\..\static\images\subcategorias_ordenadores_sobremesa.png" alt="Card image 3">
+              <div class="card-body">
+                <h4 class="card-title"><b>Para PC</b></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm">
+          <a href="{% url 'basic_app:videojuegos_nintendo' %}">
+            <div class="card w-100 card-border mb-5" id="subcategorias_videojuegos_nintendo">
+              <img class="card-img-top" src="..\..\static\images\subcategorias_ordenadores_sobremesa.png" alt="Card image 4">
+              <div class="card-body">
+                <h4 class="card-title"><b>Para Nintendo</b></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!---SUBCATEGORÍAS-FIN---------------------------------------------->
+</div>
+{% endblock %}
